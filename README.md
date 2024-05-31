@@ -83,4 +83,135 @@ Segalovich,Ilya,Valentinovich,13,9,1964
    <li> 	В 16-ричной системе счисления это число представимо как 164F.</li>
    <li> Нас интересуют только 3 последние разряда, поэтому остаётся 64F.</li>
     </ul>
-
+<h2></h2>
+<div class="header">
+      <h1 class="title">B. Через тернии к клиенту</h1>
+      <table>
+         <thead>
+            <tr><th></th>
+            <th>Все языки</th>
+            <th>Clang 16.0.0 C++20</th>
+            <th>GNU GCC 12.2 C++20</th>
+         </tr></thead>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>5&nbsp;секунд</td>
+            <td>1&nbsp;секунда</td>
+            <td>1&nbsp;секунда</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>512Mb</td>
+            <td>512Mb</td>
+            <td>512Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="3">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="3">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="legend"> Известная компания Тындекс идёт в ногу со временем — с началом активных космических перелётов в компании открылся сервис
+      Тындекс.Ракетакси: пользователю необходимо лишь указать координаты начала и конца перелёта, после чего за ним вылетит персональная
+      ракета. <!--l. 49-->
+      <p style="text-indent: 0em;">По сути любой заказ можно описать в виде событий четырёх типов: </p><ol style="list-style-type:
+      decimal;">
+      <li><span style="font-weight: bold;">A </span>(accepted) - заказ принят в работу (ракета вылетела за клиентом); </li>
+      <li><span style="font-weight: bold;">B </span>(boarding) - клиент сел в ракету; </li>
+      <li><span style="font-weight: bold;">S </span>(success) - заказ успешно завершён (клиент вышел на планете назначения); </li>
+      <li><span style="font-weight: bold;">C </span>(cancelled) - заказ отменён. </li>
+      </ol>
+      <!--l. 63-->
+      <p style="text-indent: 0em;">Все происходящие с ракетами события отправляются на сервера, где сразу логируются. Вот только
+      из-за проблем со связью (метеоритные потоки, вспышки на звездах и т.д.) отправка событий иногда затягивается, из-за чего записи
+      в получившемся логе могут идти не по порядку. <!--l. 65-->
+      </p><p style="text-indent: 0em;">Гарантируется, что все описанные в логе события задают один из следующих сценариев: </p><ol style="list-style-type: decimal;">
+      <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">B </span>- <span style="font-weight: bold;">S</span></li>
+      <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">B </span>- <span style="font-weight: bold;">C</span></li>
+      <li><span style="font-weight: bold;">A </span>- <span style="font-weight: bold;">C</span></li>
+      </ol>
+      <!--l. 77-->
+      <p style="text-indent: 0em;">Вам, как главному аналитику (и по совместительству главному программисту) ракетопарка, необходимо
+      исследовать лог за прошедший год и определить для каждой ракеты суммарное время движения (в минутах) в течение заказов. <!--l.
+      79-->
+      </p><p style="text-indent: 0em;">В каждый момент времени ракета выполняет только один заказ. Будем считать, что каждая ракета
+      в каждый момент времени: </p><ul>
+      <li>или стоит на месте в ожидании заказа, </li>
+      <li>или перемещается по космосу, выполняя заказ. </li>
+      </ul>
+      <!--l. 89-->
+      <p style="text-indent: 0em;">Движение начинается после принятия заказа и завершается после отмены или завершения заказа. За
+      одну минуту не может произойти несколько событий, связанных с одной и той же ракетой. </p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      
+   </div>
+<h2>Формат ввода</h2>
+В первой строке дано целое число N(2≤N≤200000)  — количество записей в логе.
+Следующие N строк содержат записи в логе в формате day hour minute id status:<p></p>
+<ul>
+<li>day(1≤d≤365)  — номер дня (сквозная нумерация с начала календарного года);</li>
+<li>hour(0≤h<24)  — часы;</li>
+<li>minute(0≤m<60)  — минуты;</li>
+<li>id(0≤id≤109)  — уникальный идентификатор ракеты;</li>
+<li>status∈{A,B,S,C}  — буква, обозначающая тип события.</li>
+</ul>
+<h2>Формат вывода</h2>
+<div class="output-specification"> В единственной строке выведите через пробел суммарное время движения на заказах для каждой упомянутой в логе ракеты. Данные
+      необходимо выводить в порядке возрастания идентификаторов ракет. 
+   </div>
+   <h2>Пример</h2>
+   <table class="sample-tests">
+      <thead>
+         <tr>
+            <th>Ввод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_input i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать ввод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать ввод"></span></button></div></th>
+            <th>Вывод<div class="problem__copy-sample"><button class="button button_theme_pseudo button_size_s button_only-icon_yes problem__copy-button problem__copy-button_type_output i-bem" data-bem="{&quot;button&quot;:{}}" role="button" type="button" title="Скопировать вывод"><span class="button__text">&nbsp;<img class="image button__icon button__icon_role_copy" src="//yastatic.net/lego/_/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="Скопировать вывод"></span></button></div></th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td><pre>8
+50 7 25 3632 A
+14 23 52 212372 S
+15 0 5 3632 C
+14 21 30 212372 A
+50 7 26 3632 C
+14 21 30 3632 A
+14 21 40 212372 B
+14 23 52 3632 B
+</pre></td>
+            <td><pre>156 142
+</pre></td>
+         </tr>
+      </tbody>
+   </table>
+   <h2>Примечания</h2>
+   <div class="notes"><span style="font-weight: bold;">Ракета №3632</span><p></p><ol style="list-style-type: decimal;">
+      <li>в 14-й день года в 21:30 получила заказ (шестая запись в логе); </li>
+      <li>забрала пассажира в 23:52 того же дня (восьмая запись в логе); </li>
+      <li>после чего заказ был отменён в 15-й день года в 00:05 (третья запись в логе); </li>
+      <li>в 50-й день года в 7:25 получила заказ (первая запись в логе); </li>
+      <li>заказ был отменён уже через минуту (четвёртая запись в логе).</li>
+      </ol>
+      <!--l. 124-->
+      <p style="text-indent: 0em;">Таким образом ракета №3632 провела в движении с 14-го дня 21:30 до 15-го дня 00:05 и с 50-го
+      дня 7:25 до 50-го дня 7:26 — всего 156 минут. <!--l. 126-->
+      </p><p style="text-indent: 0em;"><span style="font-weight: bold;">Ракета №212372</span></p><ol style="list-style-type: decimal;">
+      <li>в 14-й день года в 21:30 получила заказ (третья запись в логе); </li>
+      <li>через 10 минут забрала пассажира (седьмая запись в логе); </li>
+      <li>в 23:52 прибыла на место назначения (вторая запись в логе).</li>
+      </ol>
+      <!--l. 134-->
+      <p style="text-indent: 0em;">Всего ракета №212372 провела в движении с 14-го дня 21:30 до 14-го дня 23:52 142 минуты. </p>
+      <p></p>
+      <p></p>
+      
+   </div>
