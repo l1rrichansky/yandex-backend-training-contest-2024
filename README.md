@@ -1,5 +1,5 @@
 # yandex-backend-training-contest-2024
-Тренировочный контекст - Бэкэнд. Яндекс.
+Тренировочный контекст - Бэкэнд. Яндекс. Что смог...
 <div class="header">
       <h1 class="title">A. Хитрый шифр</h1>
       <table>
@@ -215,3 +215,99 @@ Segalovich,Ilya,Valentinovich,13,9,1964
       <p></p>
       
    </div>
+<div class="header">
+      <h1 class="title">C. Приснится же такое...</h1>
+      <table>
+         <thead>
+            <tr><th></th>
+            <th>Все языки</th>
+            <th>Clang 16.0.0 C++20</th>
+            <th>GNU GCC 12.2 C++20</th>
+         </tr></thead>
+         <tbody><tr class="time-limit">
+            <td class="property-title">Ограничение времени</td>
+            <td>3&nbsp;секунды</td>
+            <td>2&nbsp;секунды</td>
+            <td>2&nbsp;секунды</td>
+         </tr>
+         <tr class="memory-limit">
+            <td class="property-title">Ограничение памяти</td>
+            <td>512Mb</td>
+            <td>512Mb</td>
+            <td>512Mb</td>
+         </tr>
+         <tr class="input-file">
+            <td class="property-title">Ввод</td>
+            <td colspan="3">стандартный ввод или input.txt</td>
+         </tr>
+         <tr class="output-file">
+            <td class="property-title">Вывод</td>
+            <td colspan="3">стандартный вывод или output.txt</td>
+         </tr>
+      </tbody></table>
+   </div>
+   <h2></h2>
+   <div class="WordSection1">
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Наконец-то с царством Морфея удалось наладить дипломатические отношения!
+Первым делом в магазины поступили самые корректные и полные сонники,
+составленные в сотрудничестве с главными <span class="SpellE">сномагами</span>
+царства.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Ваш близкий друг Тирания <span class="SpellE">Вампадур</span> купила такой
+сонник одной из первых. Но тут же её ждало разочарование. Оказалось, что
+некоторые сны образуют целую последовательность сюжетов, которую надо
+интерпретировать только целиком.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">И у Тирании оказалась именно такая ситуация. Когда-то давно ей
+приснилось двоичное дерево из&nbsp;N&nbsp;вершин, занумерованных целыми числами
+от&nbsp;1&nbsp;до&nbsp;N.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Вершина&nbsp;1&nbsp;являлась корнем. У каждой вершины&nbsp;v&nbsp;было
+до двух сыновей: левый имел номер&nbsp;2</span><span style="font-family:&quot;Cambria Math&quot;,serif;
+mso-bidi-font-family:&quot;Cambria Math&quot;;mso-ansi-language:#2000;mso-fareast-language:
+#2000">⋅</span><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">v, правый —&nbsp;2</span><span style="font-family:&quot;Cambria Math&quot;,serif;
+mso-bidi-font-family:&quot;Cambria Math&quot;;mso-ansi-language:#2000;mso-fareast-language:
+#2000">⋅</span><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">v+1&nbsp;(при условии, что их номера не превосходили&nbsp;N). Таким
+образом, зная число&nbsp;N, дерево можно было однозначно восстановить.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Но, к сожалению, следующие&nbsp;Q&nbsp;ночей Тирании снились похожие
+сны: одна из вершин дерева&nbsp;v&nbsp;менялась местами с её предком
+(если&nbsp;v&nbsp;была корнем дерева, то ничего не происходило). Причем эти
+изменения переносились между снами, всё больше и больше изменяя оригинальное
+дерево.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Чтобы верно интерпретировать значение снов, Тирании нужно узнать
+итоговую структуру дерева после всех произошедших с ним изменений. Она просит
+вас помочь ей и по последовательности менявшихся вершин найти итоговую
+структуру дерева из её снов.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000;mso-fareast-language:
+#2000">Понимая, что в этом деле важна точность, вы расспросили Тиранию насчет
+процесса обмена местами вершины&nbsp;v&nbsp;с её предком.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-ansi-language:#2000"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/c8f6bcda-8c9f-471d-8548-58c8d1f8f5ff)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/bbced84d-c630-4925-bbad-cf7a39647254)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/b8433e2b-7057-498c-83a4-caac1c37fb91)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/6d05387d-3100-4cd1-bffc-9f236ce8d288)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/5c261a55-73c4-439f-ab82-bcf700101dd4)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/e12c9c14-f173-44af-92b8-8553a37b3e0b)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/1c296d1c-afc5-4d66-8db0-02e93762a831)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/8fa161be-2b28-4e55-95e3-157861fe4293)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/6a13aa99-ec34-4147-a584-8b808f8fe4e6)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/7e644333-3248-4870-a2ec-6f0de8c97807)
+![image](https://github.com/l1rrichansky/yandex-backend-training-contest-2024/assets/85824228/a0e30da0-02e9-4fdd-a78e-13c70078204f)
+
+
